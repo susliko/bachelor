@@ -5,3 +5,5 @@
     to.set(toBalance + amount)
   }
 
+  transfer(10, 100, 100)
+
