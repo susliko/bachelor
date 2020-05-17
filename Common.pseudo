@@ -1,0 +1,15 @@
+def isValid(`history`: [[operation]], `state`: impl): bool = {
+  if `history` is empty { return true }
+  else {
+    for operation `op` in possibleOperations(`history`) {
+      let `res` be the result of `op` in `history`
+      run `op` on `state`
+      if `op` results in `res` &&
+          isValid(`history` - `op`, `state`) { return true }
+      else {
+        undo `op` on `state`
+      }
+    }
+    return false
+  }
+}

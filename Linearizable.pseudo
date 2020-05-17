@@ -1,0 +1,10 @@
+def possibleOperations(`history`: [[operation]]): [operation] = {
+  let `res` be an empty list []
+  for `processHistory` in `history` {
+    if `processHistory` is not empty {
+      add first element of `processHistory` to `res`
+    }
+  }
+  sort `res` by the end time of each operation
+  return `res`
+}
