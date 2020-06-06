@@ -1,0 +1,4 @@
+Test failed for scenario:
+ [0; 3] push(item=8): () | [1; 2] push(item=3): () 
+ [5; 6] pop(): Some(8)   | [4; 7] pop(): None      
+
